@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">佣友</string>
+    <string name="test">策划师</string>
+    <string name="code">倒计时%1$d秒</string>
+    <string name="cylcles">期限%1$d月</string>
+    <string name="precent">%1$.2f%%</string>
+    <string name="money">起购金额%1$d万元</string>
+    <string name="money1">￥%1$.2f</string>
+    <string name="mymoney">%1$d元</string>
+    <string name="code_finish">发送验证码</string>
+    <string name="product">产品形式%1$d</string>
+</resources>

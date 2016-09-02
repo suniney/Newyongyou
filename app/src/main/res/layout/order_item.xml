@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/white_bg">
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:ellipsize="marquee"
+                android:text="xxx股基金"
+                android:maxEms="9"
+                android:singleLine="true"
+                android:textColor="@color/blue_deep_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="预约待审核"
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="2016-03-01"
+                android:textColor="@color/blue_deep_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/mymoney"
+                android:textColor="@color/blue_deep_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_appont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/order_cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/order_addrss"
+                android:background="@drawable/black_edge_btn"
+                android:text="取消预约"
+                android:textColor="@color/black_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/order_addrss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/order_upload_money"
+                android:background="@drawable/yellow_edge_btn"
+                android:text="修改合同地址"
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/order_upload_money"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/yellow_edge_btn"
+                android:text="上传打款凭证"
+
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/order_upload_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/yellow_edge_btn"
+                android:text="上传合同签署页照片"
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/order_reorder"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/yellow_edge_btn"
+                android:text="重新预约"
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_appont_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/order_cancel_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/order_addrss_1"
+                android:background="@drawable/black_edge_btn"
+                android:text="取消预约"
+                android:textColor="@color/black_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/order_addrss_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/yellow_edge_btn"
+                android:text="修改合同地址"
+                android:textColor="@color/text_deep_yellow"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+

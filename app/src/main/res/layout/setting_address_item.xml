@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.yanxu.newyongyou.widget.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_delete"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/layout_content"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/detele" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/iv_delete"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="删 除"
+                android:textColor="#DDFFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/mybg"
+                   >
+
+                    <LinearLayout
+                        android:id="@+id/ll_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="收件姓名"
+                            android:textColor="@color/black_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/address_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="收件姓名"
+                            android:textColor="@color/text_middle_grey"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/address_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:text="18548845551"
+                            android:textColor="@color/text_msg"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/address_default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:text="默认"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="15sp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ll_1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="2"
+                            android:text="哈尔滨市南岗区嵩山路182号院内银多资本"
+                            android:textColor="@color/text_middle_grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.example.yanxu.newyongyou.widget.SlidingButtonView>
